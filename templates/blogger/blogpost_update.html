@@ -1,0 +1,11 @@
+{% extends "blogger/my_profile.html" %}
+
+{% block content %}
+{% load crispy_forms_tags %}
+<form method="POST">
+{% csrf_token %}
+{{data|crispy}}
+<!--{{login_form|crispy}}-->
+<button type="submit">save</button>
+</form>
+{% endblock %}
