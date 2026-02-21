@@ -20,5 +20,7 @@ urlpatterns = [
     path("blogpost_lists",blogviews.blogpost_lists,name="blogpost_lists"),
     path("blogposts_lists",adminviews.blogposts_lists,name="blogposts_lists"),
     path("blogers_list",adminviews.blogers_list,name="blogers_list"),
-path("blogers_delete/<int:id>/", adminviews.blogers_delete, name="blogers_delete"),
+    path("blogers_delete/<int:id>/", adminviews.blogers_delete, name="blogers_delete"),
+    path("Log_out",blogviews.Log_out,name="Log_out"),
+    path("Log_out",adminviews.Log_out,name="Log_out"),
 ]
